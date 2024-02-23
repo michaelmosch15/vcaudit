@@ -1,95 +1,26 @@
-import * as React from "react";
-
-const pageStyles = {
-  color: "#232129",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-  display: "flex", // These two lines will center the content vertically and horizontally
-  justifyContent: "center",
-  alignItems: "center",
-  height: "100vh", // This ensures the containing element takes full viewport height
-  flexDirection: "column", // This will stack children elements vertically
-};
-
-const headingStyles = {
-  textAlign: "center", // This centers the text inside the heading element
-};
-
-const headingAccentStyles = {
-  color: "#663399",
-};
-
-const paragraphStyles = {
-  marginBottom: 48,
-};
-
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-};
-
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-};
-
-const listItemStyles = {
-  fontWeight: 300,
-  fontSize: 24,
-  maxWidth: 560,
-  marginBottom: 30,
-};
-
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
-  fontSize: 16,
-  verticalAlign: "5%",
-};
-
-const docLinkStyle = {
-  ...linkStyle,
-  listStyleType: "none",
-  marginBottom: 24,
-};
-
-const descriptionStyle = {
-  color: "#232129",
-  fontSize: 14,
-  marginTop: 10,
-  marginBottom: 0,
-  lineHeight: 1.25,
-};
-
-
-const badgeStyle = {
-  color: "#fff",
-  backgroundColor: "#088413",
-  border: "1px solid #088413",
-  fontSize: 11,
-  fontWeight: "bold",
-  letterSpacing: 1,
-  borderRadius: 4,
-  padding: "4px 6px",
-  display: "inline-block",
-  position: "relative",
-  top: -2,
-  marginLeft: 10,
-  lineHeight: 1,
-};
+import React, { useState, useEffect } from 'react';
+import CircularProgressBar from '../components/CircularProgressBar';
+import './styles.css'; 
 
 const IndexPage = () => {
+  const ParentComponent = () => {
+    const [progress, setProgress] = useState(0);
+  
+
+  }
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>
-        Graph go here with numbers and box below
-      </h1>
+    <main>
+
+    <div className="center-container"> 
+          <div classname="titlecontainer">
+      <h1></h1><center>Vestor</center>
+      </div>
+      <div className="circle-container"> 
+      <CircularProgressBar progress={25} animate={true} />      </div>
+    </div>
     </main>
   );
 };
 
-export default IndexPage;
 
-export const Head = () => <title>Home Page</title>;
+export default IndexPage;
