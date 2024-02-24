@@ -10,13 +10,14 @@ const IndexPage = () => {
   }
   return (
     <main>
+    
+    <center><img src="./images/icon.png" className="icon.png" /></center>
 
     <div className="center-container"> 
           <div classname="titlecontainer">
-      <h1></h1><center>Vestor</center>
       </div>
       <div className="circle-container"> 
-      <CircularProgressBar progress={25} animate={true} />      </div>
+      <CircularProgressBar progress={47} animate={true} />      </div>
     </div>
     </main>
   );

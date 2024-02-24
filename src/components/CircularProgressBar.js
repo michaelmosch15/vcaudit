@@ -4,9 +4,9 @@ import './CircularProgressBar.css';
 const CircularProgressBar = ({
   size = 300,
   progress = 50,
-  strokeWidth = 10,
+  strokeWidth = 30,
   circleOneStroke = '#FFFFFF',
-  circleTwoStroke = '#335731',
+  circleTwoStroke = '#63cc3a',
   animate = true,
 }) => {
   const center = size / 2;
@@ -23,6 +23,7 @@ const CircularProgressBar = ({
     : 'progress-ring__circle--stopped';
 
   return (
+    
     <svg width={size} height={size} className="circular-progress-bar">
       <circle
         cx={center}
@@ -45,6 +46,21 @@ const CircularProgressBar = ({
         fill="none"
         className={circleClass}
       />
+
+      <text
+        x={center}
+        y={center}
+        dominant-baseline="middle"
+        text-anchor="middle"
+        fill="#FFFFFF" 
+        fontSize="50" 
+      >
+
+        47
+
+        </text>
+
+
     </svg>
   );
 };
