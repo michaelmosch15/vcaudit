@@ -3,7 +3,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Vestor`,
+    title: `Veztor`,
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: ["gatsby-plugin-image", "gatsby-plugin-sitemap", {
